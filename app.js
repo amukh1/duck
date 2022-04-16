@@ -10,6 +10,6 @@ xhttp.onreadystatechange = function() {
         }
     }
 };
-xhttp.open("GET", "https://dis.amukh1.dev/lbhh", true);
+xhttp.open("GET", "https://api.amukh1.dev/getAll", true);
 xhttp.send();
 
