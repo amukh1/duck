@@ -5,7 +5,7 @@ xhttp.onreadystatechange = function() {
         console.log(xx)
         for(i=0;i<this.responseText.length;i++){
             var newDiv = document.createElement("div");
-            newDiv.innerHTML = `Username: ${xx[i].UserName} | Score: ${xx[i].Kills} | Rank: #${i}`;
+            newDiv.innerHTML = `Username: ${xx[i].UserName} | Score: ${xx[i].Kills} | Rank: #${i + 1}`;
             document.getElementById("scores").appendChild(newDiv);
         }
     }
