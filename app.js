@@ -36,7 +36,7 @@ xhttp.onreadystatechange = function() {
         console.log(xx)
         for(i=0;i<this.responseText.length;i++){
             var newDiv = document.createElement("div");
-            newDiv.innerHTML = `Username: ${xx[i].UserName} | Score: ${xx[i].Highscore} | Rank: ${i + 1}`;
+            newDiv.innerHTML = `Id: ${xx[i].Id} | Score: ${xx[i].Score} | Rank: ${i + 1}`;
             document.getElementById("scores").appendChild(newDiv);
         }
     }
